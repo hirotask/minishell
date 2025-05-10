@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+    "name": "C/C++",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ajshort.include-autocomplete",
+                "xaver.clang-format",
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "mesonbuild.mesonbuild"
+            ]
+        }
+    }
+}
