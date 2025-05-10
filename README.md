@@ -1,6 +1,6 @@
 # minishell
 
-A minimal POSIX shell.
+A minimal shell.
 
 ## Build
 
