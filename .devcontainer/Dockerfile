@@ -10,4 +10,5 @@ RUN sudo apt-get update && sudo apt-get -y install --no-install-recommends \
     vim \
     gdb \
     meson \
-    ninja-build
+    ninja-build \
+    libreadline-dev
