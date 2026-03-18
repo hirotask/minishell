@@ -1,19 +1,8 @@
 #ifndef MINISHELL_H
-# define MINISHELL_H
+#define MINISHELL_H
 
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <fcntl.h>
-# include <sys/types.h>
-# include <sys/wait.h>
-# include <sys/stat.h>
-# include <string.h>
-# include <errno.h>
-# include <stdbool.h>
-# include <sys/ioctl.h>
-# include <termios.h>
-# include <signal.h>
+#include "command.h"
+
 #if defined(HAVE_READLINE)
 #include <readline/history.h>
 #include <readline/readline.h>
@@ -22,6 +11,11 @@
 #include <histedit.h>
 #endif
 
+typedef struct s_minishell {
+    char *line;         // 標準入力された生の文字列
+    t_command *command; // 入力されたコマンド
+    int status;         // 現在のシェルのERRNO
+} t_minishell;
 
 #define PROJECT_NAME "minishell"
 
