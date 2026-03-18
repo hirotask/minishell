@@ -3,6 +3,9 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+    "mounts": [
+        "source=${localEnv:HOME}/.config/nvim,target=/home/vscode/.config/nvim,type=bind"
+    ]
     "features": {
         "ghcr.io/devcontainers/features/git:1": {}
     },
