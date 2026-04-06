@@ -12,9 +12,10 @@
 #endif
 
 typedef struct s_minishell {
-    char *line;         // 標準入力された生の文字列
-    t_command *command; // 入力されたコマンド
-    int status;         // 現在のシェルのERRNO
+  char *line;         // 標準入力された生の文字列
+  t_command *command; // 入力されたコマンド
+  int status;         // 現在のシェルのERRNO
+  char **token;       // 生の文字列を構文解析した結果得られるコーパストークン
 } t_minishell;
 
 #define PROJECT_NAME "minishell"

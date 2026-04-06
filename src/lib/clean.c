@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 void clean_exit(t_minishell *mini) {
-    int status;
+  int status;
 
-    status = mini->status;
-    free(mini);
+  status = mini->status;
+  free(mini);
 
-    exit(status);
+  exit(status);
 }

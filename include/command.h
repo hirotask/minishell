@@ -5,11 +5,10 @@
 #define COMMAND_H // COMMAND_Hを定義する
 
 typedef struct s_command {
-    unsigned int track;
-    char **argv;
-    int argc;
-    struct s_command *next;
+  unsigned int track;
+  char **argv;
+  int argc;
+  struct s_command *next;
 } t_command;
 
 #endif
-
