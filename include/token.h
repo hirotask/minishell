@@ -3,6 +3,8 @@
 
 #include "include/minishell.h"
 
+#define ARGUMENT_SIZE 1024
+
 typedef struct s_token {
   char *word;
 } t_token;
